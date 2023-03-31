@@ -118,17 +118,5 @@ function win(winner) {
 
 
 function restart() {
-    gameOver = false;
-    fields = [];
-    document.getElementById('game-over').classList.add('d-none');
-    document.getElementById('restart-btn').classList.add('d-none');
-
-    for (let i = 0; i < 8; i++) {
-        document.getElementById('line-' + i).classList.add('d-none');
-    }
-
-    for (let i = 0; i < 9; i++) {
-        document.getElementById('circle-' + i).classList.add('d-none');
-        document.getElementById('cross-' + i).classList.add('d-none');
-    }
+    location.reload();
 }
