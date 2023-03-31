@@ -63,6 +63,10 @@ table tr td:last-child {
     border-right: 0;
 }
 
+.table-container {
+    position: relative;
+}
+
 .shape {
     position: absolute;
     top: 20px;
@@ -93,6 +97,25 @@ table tr td:last-child {
     z-index: 9;
     opacity: 0.65;
     animation: zoomIn 225ms ease-in-out;
+}
+
+.restart-btn {
+    border: 1px solid rgb(0, 0, 0);
+    background-color: #1C0B7F;
+    z-index: 10;
+    width: 280px;
+    height: 100px;
+    color: white;
+    font-size: 40px;
+    border-radius: 12px;
+    cursor: pointer;
+    position: absolute;
+    bottom: 250px;
+    animation: zoomIn 225ms ease-in-out;
+}
+
+.restart-btn:hover {
+    background-color: #3b19ff;
 }
 
 .d-none {
