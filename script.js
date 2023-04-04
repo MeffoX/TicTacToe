@@ -18,6 +18,7 @@ function fillShape(id) {
         fields[id] = currentShape;
         draw();
         checkForWin();
+        win();
     }
 }
 
@@ -118,5 +119,17 @@ function win(winner) {
 
 
 function restart() {
-    location.reload();
+    gameOver = false;
+    document.getElementById("game-over").classList.add("d-none");
+    document.getElementById('restart-btn').classList.add('d-none');
+    for (let i = 0; i < 8; i++) {
+        let lines = document.getElementById('line-' + i);
+        lines.style.transform = "scaleX(0.0)";
+    }
+    for (let i = 0; i < 9; i++) {
+        document.getElementById('circle-' + i).classList.add('d-none');
+        document.getElementById('cross-' + i).classList.add('d-none');
+    }
+    fields = [];
+    draw();
 }

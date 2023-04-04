@@ -91,8 +91,6 @@ table tr td:last-child {
 
 .game-over {
     position: absolute;
-    left: 0;
-    right: 0;
     width: 100%;
     z-index: 9;
     opacity: 0.65;
@@ -130,5 +128,53 @@ table tr td:last-child {
     to {
         transform: scale(1);
         opacity: 0.65;
+    }
+}
+
+@media (max-width: 1200px) {
+    .restart-btn {
+        bottom: 500px;
+    }
+}
+
+@media (max-width: 460px) {
+    .player-panel img {
+        width: 30px;
+    }
+    .player-panel {
+        font-size: 20px;
+    }
+    table {
+        width: 300px;
+        height: 300px;
+    }
+    td {
+        width: 100px;
+        height: 100px;
+    }
+    .shape {
+        position: static;
+    }
+    .horizontal-line {
+        width: 300px;
+    }
+    /*Lines*/
+    #line-0 {
+        left: -2px !important;
+    }
+    #line-1 {
+        left: -2px !important;
+    }
+    #line-2 {
+        left: -2px !important;
+    }
+    #line-3 {
+        left: -105px !important;
+    }
+    #line-4 {
+        left: 10px !important;
+    }
+    #line-5 {
+        right: -85px !important;
     }
 }
